@@ -1,0 +1,22 @@
+#A, Here's an example implementation of the 'ToCamelCase' extension method for the 'string' class:
+public static class StringExtensions
+{
+    public static string ToCamelCase(this string str)
+    {
+        var words = str.Split(' ');
+        var camelCaseWords = words.Select((word, index) =>
+            index == 0 ? word.ToLower() : char.ToUpper(word[0]) + word.Substring(1).ToLower());
+        return string.Concat(camelCaseWords);
+    }
+}
+#This implementation splits the input string into words using the space character as a delimiter, and then converts each word to camel case by lowercasing the first word and uppercasing the first letter of subsequent words, Finally, it concatenates all the camel case words into a single string.
+
+#B, Here's an example implementation of the 'JoinWith' extension method for 'IEnumerable<string>':
+public static class EnumerableExtensions
+{
+    public static string JoinWith(this IEnumerable<string> source, string separator)
+    {
+        return string.Join(separator, source);
+    }
+}
+*This implementation simply calls the static 'string.Join' method with the specified separator and the input 'IEnumerable<string>' The 'JoinWith' method can then be called directly on any 'IEnumerable<string>' object, including lists, arrays, and other collections.
