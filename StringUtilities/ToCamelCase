@@ -19,4 +19,4 @@ public static class EnumerableExtensions
         return string.Join(separator, source);
     }
 }
-*This implementation simply calls the static 'string.Join' method with the specified separator and the input 'IEnumerable<string>' The 'JoinWith' method can then be called directly on any 'IEnumerable<string>' object, including lists, arrays, and other collections.
+#This implementation simply calls the static 'string.Join' method with the specified separator and the input 'IEnumerable<string>' The 'JoinWith' method can then be called directly on any 'IEnumerable<string>' object, including lists, arrays, and other collections.
