@@ -13,7 +13,7 @@ public static string ToSentence(string s)
 #4-The array of words is joined back into a string using the 'Join()' method with a space separator.
 #The function returns the resulting capitalized sentence.
 
-#Here is the examples of how to use the function:
+#Here's the examples of how to use the function:
 Console.WriteLine(ToSentence("marcin jagiela"));   // Output: Marcin jagiela
 Console.WriteLine(ToSentence("the LorD OF thE Rings"));   // Output: The lord of the rings
 
