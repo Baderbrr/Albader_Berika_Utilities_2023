@@ -1,13 +1,11 @@
-*Here's an possible implementation of the 'ToWords' method in Csharp:
-
+#Here's an possible implementation of the 'ToWords' method in Csharp:
 public static int ToWords(string inputStr)
 {
     string[] words = inputStr.Split(' ');
     return words.Length;
 }
-*This implementation first splits the input string at each space character using the 'Split' method, and then returns the length of the resulting array.
+#This implementation first splits the input string at each space character using the 'Split' method, and then returns the length of the resulting array.
 
-*Here's the example usages of the method:
-
+#Here's the example usages of the method:
 int numWords1 = ToWords("Marcin Jagiela"); // numWords1 = 2
 int numWords2 = ToWords("The lord of the rings"); // numWords2 = 5
